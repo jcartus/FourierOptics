@@ -34,8 +34,8 @@ imagesc( abs( grating ).^2 );
 title( 'object plane - grating' );
 colormap( gray );
 axis image;
-xlabel( 'pixel' );
-ylabel( 'pixel' );
+xlabel( 'x 1.69e-7 m ' );
+ylabel( 'x 1.69e-7 m' );
 
 %% Fourier transform of the grating and plot of the resulting 
 % diffraction image
