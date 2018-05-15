@@ -55,8 +55,8 @@ ylabel( 'pixel' );
 
 %% spatial filtering and plot of the resulting diffraction image
 
-fourgrat( 1 : cp - hsw, : ) = 0;
-fourgrat( cp + hsw : px, : ) = 0;
+%fourgrat( 1 : cp - hsw, : ) = 0;
+%fourgrat( cp + hsw : px, : ) = 0;
 %fourgrat( :, 1 : cp - hsw) = 0;
 %fourgrat( :, cp + hsw : px ) = 0;
 
