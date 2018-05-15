@@ -57,8 +57,8 @@ ylabel( 'pixel' );
 
 fourgrat( 1 : cp - hsw, : ) = 0;
 fourgrat( cp + hsw : px, : ) = 0;
-fourgrat( :, 1 : cp - hsw) = 0;
-fourgrat( :, cp + hsw : px ) = 0;
+%fourgrat( :, 1 : cp - hsw) = 0;
+%fourgrat( :, cp + hsw : px ) = 0;
 
 
 figure;
