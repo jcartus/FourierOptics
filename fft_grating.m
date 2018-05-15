@@ -54,8 +54,11 @@ xlabel( 'pixel' );
 ylabel( 'pixel' );
 
 %% spatial filtering and plot of the resulting diffraction image
-
-fourgrat( (cp-hsw):(cp+hsw), (cp-hsw):(cp+hsw)) = 0;
+r = 71;
+[xgrid, ygrid] = meshgrid(1:px, 1:px);
+mask = ((xgrid-cp).^2 + (ygrid-cp).^2) >= r.^2;
+fourgrat(mask) = 0;
+%disp(sum(sum(mask == 0)))
 
 
 figure;
